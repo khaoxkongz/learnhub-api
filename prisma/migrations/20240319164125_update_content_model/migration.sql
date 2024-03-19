@@ -1,0 +1,4 @@
+-- AlterTable
+ALTER TABLE "Content" ALTER COLUMN "comment" DROP NOT NULL,
+ALTER COLUMN "rating" SET DEFAULT 0,
+ALTER COLUMN "thumnailUrl" DROP NOT NULL;
