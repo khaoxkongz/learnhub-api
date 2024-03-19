@@ -26,3 +26,12 @@ model Content {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
+
+model User {
+  id           String   @id @default(uuid())
+  username     String   @unique
+  name         String
+  password     String
+  registeredAt DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
