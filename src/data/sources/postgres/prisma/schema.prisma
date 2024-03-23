@@ -30,8 +30,8 @@ model Content {
 
 model User {
   id           String    @id @default(uuid())
-  username     String    @unique
   name         String
+  username     String    @unique
   password     String
   contents     Content[]
   registeredAt DateTime  @default(now())
