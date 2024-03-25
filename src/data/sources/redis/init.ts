@@ -11,4 +11,6 @@ class BaseRedisDataLink extends BaseDataLink {
 
 export { RedisClientType, BaseRedisDataLink };
 
-export const redis: RedisClientType = createClient({ url: REDIS_URL });
+const redis: RedisClientType = createClient({ url: REDIS_URL });
+
+export default redis;
